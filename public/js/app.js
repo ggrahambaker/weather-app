@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
 		return console.log('you must submit a location')
 	}
 
-	const queryString = 'http://localhost:3000/weather?address=' + loc
+	const queryString = '/weather?address=' + loc
 	message1.textContent = 'LOADING...'
 	fetch(queryString).then((response) => {
 		
