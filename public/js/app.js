@@ -28,7 +28,9 @@ weatherForm.addEventListener('submit', (e) => {
 			} else {
 				console.log(data)
 				message1.textContent = data.location
-				message2.textContent = data.forecast.apparentTemperature
+				const forecastMessage = 'Its ' + data.forecast.summary + ', ' + data.forecast.apparentTemperature + ' degress with a ' + data.forecast.precipProbability + ' chance of percipitation' 
+
+				message2.textContent = forecastMessage
 					
 			}
 			
